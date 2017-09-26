@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>		
+		<script type="text/javascript" src="../data/friends.js"></script>
+		<script type="text/javascript" src="../routing/htmlRoutes.js"></script>
+		<script type="text/javascript" src="../routing/apiRoutes.js"></script>				
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1>Survey Questions</h1>
+			<h2>About You</h2>
+            <div class="text-center">
+                <a href="../public/home.html"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+            </div>			
+		</div>		
+
+		<div class="panel panel-default">			
+			<!--put the input fields for name and photo here-->
+			<label for="Input_Name">Name (required)</label>
+			<br>
+			<input class="form-control" id="IName_ID" name="Input_Name" type="text" required/>
+			<br>
+			<label for="Input_Image">Link to Photo Image (required)</label>
+			<br>
+			<input class="form-control" id="IImage_ID" type="text" name="Input_Image" required/>
+			<br>
+			<br>
+			<!--put the 10 questions here-->
+			<p style="font-weight:bold">Question 1</p>
+			<p>You understand other people's feelings well.</p>
+	        <select id="q1" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>
+	        <br>
+	        <br>		
+			<p style="font-weight:bold">Question 2</p>
+			<p>You love sports and movies.</p>
+	        <select id="q2" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>
+	        <br>
+	        <br>		
+			<p style="font-weight:bold">Question 3</p>
+			<p>You have well formulated plans before you implement them</p>
+	        <select id="q3" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>	
+	        <br>
+	        <br>	
+			<p style="font-weight:bold">Question 4</p>
+			<p>You are an optimistic and gregarious person.</p>
+	        <select id="q4" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</options>
+	        </select>	
+	        <br>
+	        <br>	
+			<p style="font-weight:bold">Question 5</p>
+			<p>You don't care what other people's religions are.</p>
+	        <select id="q5" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>	
+	        <br>
+	        <br>	
+			<p style="font-weight:bold">Question 6</p>
+			<p>You lose your temper very easily.</p>
+	        <select id="q6" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>	
+	        <br>
+	        <br>	
+			<p style="font-weight:bold">Question 7</p>
+			<p>You like cooking and going to restaurants</p>
+	        <select id="q7" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>
+	        <br>
+	        <br>		
+			<p style="font-weight:bold">Question 8</p>
+			<p>You love going to watch baseball or basketball games at arenas and stadiums</p>
+	        <select id="q8" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>
+	        <br>
+	        <br>		
+			<p style="font-weight:bold">Question 9</p>
+			<p>You love novels</p>
+	        <select id="q9" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>
+	        <br>
+	        <br>		
+			<p style="font-weight:bold">Question 10</p>
+			<p>You love to tell jokes to make others laugh more.</p>
+	        <select id="q10" style="width:7.5%" class = "myList">
+	            <option value = "1">1</option>
+	            <option value = "2">2</option>
+	            <option value = "3">3</option>
+	            <option value = "4">4</option>
+	            <option value = "5">5</option>
+	        </select>			
+			<!--put the submit button here-->
+			<br>
+			<br>
+<!-- Submit Button -->
+			<button type="submit" class="waves-effect waves-light blue btn" id="SubmitResults">Submit
+			</button>
+			<br>
+			<br>
+			
+			<hr>
+			<a href="/api/friends">API Friends List</a> | <a href="https://github.com/Dhwyll/Friend-Finder">GitHub Repo</a>
+
+		</div>
+
+		<!-- Modal to show results -->
+		<div id="resultsModal" class="modal">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<h4><strong>Best Match</strong></h4>
+				<hr>
+				<br>
+				<h4 id="matchName" class="center-align">Name</h4>
+				<div class="row">
+					<div class="col-lg-4">
+						<img id="matchImg">
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect btn-flat">Cool!</a>
+			</div>
+
+		</div>
+
+		<!-- Modal to request the form be filled out completely -->
+		<div id="incompleteModal" class="modal">
+				
+			<!-- Modal content-->
+			<div class="modal-content">
+				<h4><strong>Incomplete Form!</strong></h4>
+				<hr>
+				Sorry, my friend, by you need to fill out all the items in the form.
+				<hr>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect btn-flat">Try Again</a>
+			</div>
+
+		</div>
+
+	<script>
+		//$(document).ready(function() {
+		//	$('select').material_select();
+		//	$('.modal').modal();
+		//});
+		// Capture the form inputs 
+		$("#SubmitResults").on("click", function(){
+			// Form validation
+			function validateForm() {
+				var isValid = true;
+				$('.form-control').each(function() {
+					if (!$(this).val())
+						isValid = false;
+				});
+				$('.myList').each(function() {
+					if($(this).val() === null)
+						isValid = false;
+				});
+				return isValid;
+			}
+			// If all required fields are filled
+			if (validateForm() == true)
+			{
+				// Create an object for the user's data
+				var userData = {
+					name: $("#IName_ID").val(),
+					photo: $("#IImage_ID").val(),
+					scores: [parseInt($("#q1").val()), parseInt($("#q2").val()),
+					parseInt($("#q3").val()), parseInt($("#q4").val()), parseInt($("#q5").val()),
+					parseInt($("#q6").val()), parseInt($("#q7").val()), parseInt($("#q8").val()),
+					parseInt($("#q9").val()), parseInt($("#q10").val()) ]
+				}
+				// Grab the URL of the website
+				var currentURL = window.location.origin;
+				// AJAX post the data to the friends API. 
+				$.post(currentURL + "/api/friends", userData, function(data){
+					// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+					$("#matchName").text(data.name);
+					$('#matchImg').attr("src", data.photo);
+					// Show the modal with the best match
+					$('#resultsModal').modal('open');
+				});
+			}
+			else
+			{
+				$('#incompleteModal').modal('open');
+			}
+			
+			return false;
+		});	
+	</script>
+
+	</body>	
+</html>
